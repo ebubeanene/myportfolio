@@ -31,15 +31,15 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "•	CoolTech®: a smart vaccine cooler",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "•	As an intern at Innov8 Hub, Nigeria, I designed the power pack for CoolTech®, applying principles of power electronics and energy efficiency",
+    url: "https://www.linkedin.com/posts/innov8hub_cooltech-tetfair-activity-7303710580664655872-G3-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKAZ1AByBjM3jn9mi029QtFXJlmxu2_weU",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Xtractor: A smart fume extractor for soldering stations",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
+      "I led fellow interns in designing and creating a prototype for a smart fume extractor in trying to help solve the problem of our senior colleagues inhaling fumes while soldering at Innov8 Hub.",
     url: "https://github.com/microsoft/web-dev-for-beginners",
   },
   {
