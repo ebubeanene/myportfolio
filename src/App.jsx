@@ -27,12 +27,12 @@ const siteProps = {
   name: "Chukwudiebube 'Ebube' Anene",
   title: "Digital Design Engineer & Anonymous Novice Food Critic",
   email: "chukwudiebubeanene@gmail.com",
-  gitHub: "https://github.com/anene-ebube",
-  instagram: "https://www.instagram.com/ea_torinmo/",
-  linkedIn: "https://www.linkedin.com/in/chukwudiebubeanene/",
+  gitHub: "ebubeanene",
+  instagram: "ea_torinmo",
+  linkedIn: "chukwudiebubeanene",
   medium: "",
-  x: "https://x.com/CO_Anene",
-  youTube: "https://www.youtube.com/@ChukwudiebubeAnene",
+  x: "CO_Anene",
+  youTube: "ChukwudiebubeAnene",
 };
 
 const primaryColor = "#4E567E";
