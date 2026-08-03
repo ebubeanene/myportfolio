@@ -1,7 +1,7 @@
 {
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
-  "description": "Chukwudiebube Anene",
+  "description": "Educator JS Codespaces Template",
   "source": "src/index.html",
   "homepage": "http://ebubeanene.github.io/portfolio",
   "scripts": {
