@@ -27195,7 +27195,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -28639,7 +28639,7 @@ var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
  * Home background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  *
@@ -28764,17 +28764,17 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  * as you continue to learn and create.
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */ var _designDeskJpeg = require("../images/design-desk.jpeg");
-var _designDeskJpegDefault = parcelHelpers.interopDefault(_designDeskJpeg);
-const imageAltText = "desktop with books and laptop";
+var _coolTechPng = require("../images/coolTech.png");
+var _coolTechPngDefault = parcelHelpers.interopDefault(_coolTechPng);
+var _myPicJpg = require("../images/MyPic.jpg");
+var _myPicJpgDefault = parcelHelpers.interopDefault(_myPicJpg);
+var _womanWithTabletJpg = require("../images/woman-with-tablet.jpg");
+var _womanWithTabletJpgDefault = parcelHelpers.interopDefault(_womanWithTabletJpg);
+var _portfolioHomepageJpg = require("../images/PortfolioHomepage.jpg");
+var _portfolioHomepageJpgDefault = parcelHelpers.interopDefault(_portfolioHomepageJpg);
+var _motionBackgroundJpg = require("../images/motion-background.jpg");
+var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
+const heroImageAltText = "desktop with books and laptop";
 /**
  * Project list
  *
@@ -28784,22 +28784,30 @@ const imageAltText = "desktop with books and laptop";
     {
         title: "•	CoolTech\xae: a smart vaccine cooler",
         description: "•	As an intern at Innov8 Hub, Nigeria, I designed the power pack for CoolTech\xae, applying principles of power electronics and energy efficiency",
-        url: "https://www.linkedin.com/posts/innov8hub_cooltech-tetfair-activity-7303710580664655872-G3-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKAZ1AByBjM3jn9mi029QtFXJlmxu2_weU"
+        url: "https://www.linkedin.com/posts/innov8hub_cooltech-tetfair-activity-7303710580664655872-G3-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKAZ1AByBjM3jn9mi029QtFXJlmxu2_weU",
+        image: (0, _myPicJpgDefault.default),
+        imageAlt: "CoolTech product concept and engineering work"
     },
     {
         title: "Xtractor: A smart fume extractor for soldering stations",
         description: "I led fellow interns in designing and creating a prototype for a smart fume extractor in trying to help solve the problem of our senior colleagues inhaling fumes while soldering at Innov8 Hub.",
-        url: "https://github.com/microsoft/web-dev-for-beginners"
+        url: "https://github.com/microsoft/web-dev-for-beginners",
+        image: (0, _womanWithTabletJpgDefault.default),
+        imageAlt: "Prototype design and engineering setup"
     },
     {
         title: "My Resume Site",
         description: "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+        image: (0, _portfolioHomepageJpgDefault.default),
+        imageAlt: "Portfolio website homepage preview"
     },
     {
         title: "GitHub Codespaces and github.dev",
         description: "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-        url: "https://www.youtube.com/watch?v=c3hHhRME_XI"
+        url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+        image: (0, _motionBackgroundJpgDefault.default),
+        imageAlt: "Abstract motion graphics representing coding and collaboration"
     }, 
 ];
 const Portfolio = ()=>{
@@ -28814,7 +28822,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 62,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28830,21 +28838,21 @@ const Portfolio = ()=>{
                             alignSelf: "center"
                         },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _designDeskJpegDefault.default),
+                            src: (0, _coolTechPngDefault.default),
                             style: {
                                 height: "90%",
                                 width: "100%",
                                 objectFit: "cover"
                             },
-                            alt: imageAltText
+                            alt: heroImageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 65,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 64,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28852,6 +28860,15 @@ const Portfolio = ()=>{
                         children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "box",
                                 children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: project.image,
+                                        alt: project.imageAlt,
+                                        className: "portfolio-image"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Portfolio.jsx",
+                                        lineNumber: 77,
+                                        columnNumber: 15
+                                    }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                         href: project.url,
                                         target: "_blank",
@@ -28863,12 +28880,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 79,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28876,30 +28893,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 73,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 71,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 63,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 61,
+        lineNumber: 64,
         columnNumber: 5
     }, undefined);
 };
@@ -28913,8 +28930,14 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/design-desk.jpeg":"jSSP3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jSSP3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "design-desk.df4cd0cf.jpeg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/MyPic.jpg":"6Drj3","../images/woman-with-tablet.jpg":"bEltf","../images/PortfolioHomepage.jpg":"bOObX","../images/motion-background.jpg":"kzNvo","../images/coolTech.png":"kp6ll"}],"6Drj3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "MyPic.f8ab4e16.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bEltf":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "woman-with-tablet.b3bf1156.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"kp6ll":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "coolTech.e471974b.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
