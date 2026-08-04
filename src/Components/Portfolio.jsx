@@ -11,7 +11,7 @@
 import React from "react";
 
 import heroImage from "../images/coolTech.png";
-import coolTechImage from "../images/MyPic.jpg";
+import coolTechImage from "../images/coolTech.png";
 import extractorImage from "../images/woman-with-tablet.jpg";
 import resumeImage from "../images/PortfolioHomepage.jpg";
 import githubImage from "../images/motion-background.jpg";

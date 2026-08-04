@@ -47,6 +47,27 @@ const skillsList = [
 const detailOrQuote =
   "I am passionate about solving problems in new creative ways to drive innovation.";
 
+const quickLinks = [
+  {
+    title: "My Academic Curriculum Vitae",
+    description:
+      "A detailed overview of my academic journey, including my education, research, and professional experiences.",
+  },
+  {
+    title: "Roles Academy Youtube Channel",
+    description:
+      "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things.",
+  },
+  {
+    title: "Download Resume",
+    description: "Download a copy of my Resume.",
+  },
+  {
+    title: "My GitHub Repository",
+    description: "Contains various work I have done on Electronics and TinyML.",
+  },
+];
+
 const About = () => {
   return (
     <section className="padding" id="about">
@@ -78,6 +99,18 @@ const About = () => {
         </ul>
         <hr />
         <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+      </div>
+
+      <div className="quick-links-wrapper">
+        <h2 style={{ textAlign: "center" }}>Quick Links</h2>
+        <div className="quick-links-grid">
+          {quickLinks.map((link) => (
+            <div className="quick-link-card" key={link.title}>
+              <h3>{link.title}</h3>
+              <p>{link.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
