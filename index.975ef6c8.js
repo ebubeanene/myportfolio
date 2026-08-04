@@ -27092,6 +27092,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _about = require("./Components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _awards = require("./Components/Awards");
+var _awardsDefault = parcelHelpers.interopDefault(_awards);
 var _footer = require("./Components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _header = require("./Components/Header");
@@ -27128,7 +27130,7 @@ const App = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 44,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -27136,17 +27138,22 @@ const App = ()=>{
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 46,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 47,
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _awardsDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -27155,13 +27162,13 @@ const App = ()=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 5
     }, undefined);
 };
@@ -27175,7 +27182,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/Awards":"ayBFk"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27222,6 +27229,24 @@ const imageAltText = "purple and blue abstract background";
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */ const detailOrQuote = "I am passionate about solving problems in new creative ways to drive innovation.";
+const quickLinks = [
+    {
+        title: "My Academic Curriculum Vitae",
+        description: "A detailed overview of my academic journey, including my education, research, and professional experiences."
+    },
+    {
+        title: "Roles Academy Youtube Channel",
+        description: "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things."
+    },
+    {
+        title: "Download Resume",
+        description: "Download a copy of my Resume."
+    },
+    {
+        title: "My GitHub Repository",
+        description: "Contains various work I have done on Electronics and TinyML."
+    }, 
+];
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
@@ -27233,7 +27258,7 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 53,
+                lineNumber: 74,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27249,7 +27274,7 @@ const About = ()=>{
                         children: "About Myself"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 63,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27257,12 +27282,12 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 64,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 65,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27277,17 +27302,17 @@ const About = ()=>{
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 76,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 66,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 79,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27297,19 +27322,68 @@ const About = ()=>{
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 80,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 54,
+                lineNumber: 75,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "quick-links-wrapper",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            textAlign: "center"
+                        },
+                        children: "Quick Links"
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 105,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "quick-links-grid",
+                        children: quickLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "quick-link-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: link.title
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 109,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: link.description
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 110,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, link.title, true, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 108,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/About.jsx",
+                lineNumber: 104,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 52,
+        lineNumber: 73,
         columnNumber: 5
     }, undefined);
 };
@@ -28766,8 +28840,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _coolTechPng = require("../images/coolTech.png");
 var _coolTechPngDefault = parcelHelpers.interopDefault(_coolTechPng);
-var _myPicJpg = require("../images/MyPic.jpg");
-var _myPicJpgDefault = parcelHelpers.interopDefault(_myPicJpg);
 var _womanWithTabletJpg = require("../images/woman-with-tablet.jpg");
 var _womanWithTabletJpgDefault = parcelHelpers.interopDefault(_womanWithTabletJpg);
 var _portfolioHomepageJpg = require("../images/PortfolioHomepage.jpg");
@@ -28785,7 +28857,7 @@ const heroImageAltText = "desktop with books and laptop";
         title: "•	CoolTech\xae: a smart vaccine cooler",
         description: "•	As an intern at Innov8 Hub, Nigeria, I designed the power pack for CoolTech\xae, applying principles of power electronics and energy efficiency",
         url: "https://www.linkedin.com/posts/innov8hub_cooltech-tetfair-activity-7303710580664655872-G3-X?utm_source=share&utm_medium=member_desktop&rcm=ACoAADKAZ1AByBjM3jn9mi029QtFXJlmxu2_weU",
-        image: (0, _myPicJpgDefault.default),
+        image: (0, _coolTechPngDefault.default),
         imageAlt: "CoolTech product concept and engineering work"
     },
     {
@@ -28930,15 +29002,231 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/MyPic.jpg":"6Drj3","../images/woman-with-tablet.jpg":"bEltf","../images/PortfolioHomepage.jpg":"bOObX","../images/motion-background.jpg":"kzNvo","../images/coolTech.png":"kp6ll"}],"6Drj3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "MyPic.f8ab4e16.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"bEltf":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/woman-with-tablet.jpg":"bEltf","../images/PortfolioHomepage.jpg":"bOObX","../images/motion-background.jpg":"kzNvo","../images/coolTech.png":"kp6ll"}],"bEltf":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "woman-with-tablet.b3bf1156.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"kp6ll":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "coolTech.e471974b.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"ayBFk":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4f58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4f58.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const awardsList = [
+    {
+        title: "Outstanding Innovation Award",
+        issuer: "Innov8 Hub",
+        year: "2024",
+        description: "Recognized for creative problem-solving and engineering impact."
+    },
+    {
+        title: "Academic Excellence Recognition",
+        issuer: "University / Institution",
+        year: "2023",
+        description: "Acknowledged for strong academic performance and leadership."
+    }, 
+];
+const certificationList = [
+    {
+        title: "Microsoft GitHub Copilot Fundamentals",
+        issuer: "Microsoft",
+        year: "2024",
+        description: "Built practical AI-assisted development workflows."
+    },
+    {
+        title: "TinyML / Embedded Systems Course",
+        issuer: "Course Provider",
+        year: "2024",
+        description: "Completed a focused learning path on small-scale ML systems."
+    }, 
+];
+const Awards = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "awards",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "section-heading",
+                style: {
+                    textAlign: "center",
+                    marginBottom: "2rem"
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Awards & Certifications"
+                }, void 0, false, {
+                    fileName: "src/Components/Awards.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Awards.jsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "awards-layout",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "awards-column",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    marginBottom: "1rem"
+                                },
+                                children: "Awards"
+                            }, void 0, false, {
+                                fileName: "src/Components/Awards.jsx",
+                                lineNumber: 42,
+                                columnNumber: 11
+                            }, undefined),
+                            awardsList.map((award)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "award-card",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "award-meta",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: award.year
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Awards.jsx",
+                                                    lineNumber: 46,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: award.issuer
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Awards.jsx",
+                                                    lineNumber: 47,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            children: award.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 49,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: award.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, award.title, true, {
+                                    fileName: "src/Components/Awards.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined))
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Awards.jsx",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "awards-column",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    marginBottom: "1rem"
+                                },
+                                children: "Certifications"
+                            }, void 0, false, {
+                                fileName: "src/Components/Awards.jsx",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, undefined),
+                            certificationList.map((certification)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "award-card",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "award-meta",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: certification.year
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Awards.jsx",
+                                                    lineNumber: 60,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: certification.issuer
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Awards.jsx",
+                                                    lineNumber: 61,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 59,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            children: certification.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 63,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: certification.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Awards.jsx",
+                                            lineNumber: 64,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, certification.title, true, {
+                                    fileName: "src/Components/Awards.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, undefined))
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Awards.jsx",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Awards.jsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Awards.jsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Awards;
+exports.default = Awards;
+var _c;
+$RefreshReg$(_c, "Awards");
+
+  $parcel$ReactRefreshHelpers$4f58.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
