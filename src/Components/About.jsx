@@ -17,6 +17,7 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/motion-background.jpg";
+import portraitImage from "../images/portrait.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -72,37 +73,32 @@ const About = () => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+
+      <div className="about-layout">
+        <div className="about-portrait">
+          <img
+            className="portrait-image"
+            src={portraitImage}
+            alt="Portrait of Chukwudiebube Anene"
+          />
+        </div>
+
+        <div className="about-card">
+          <h2 className="about-section-title">About Myself</h2>
+          <p className="large about-description">{description}</p>
+          <hr />
+          <ul className="about-skills-list">
+            {skillsList.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
+          </ul>
+          <hr />
+          <p className="about-quote">{detailOrQuote}</p>
+        </div>
       </div>
 
-      <div className="quick-links-wrapper">
-        <h2 style={{ textAlign: "center" }}>Quick Links</h2>
+      <div className="quick-links-wrapper" id="quick-links">
+        <h2 style={{ textAlign: "center" }}>Check these links out</h2>
         <div className="quick-links-grid">
           {quickLinks.map((link) => (
             <div className="quick-link-card" key={link.title}>
