@@ -37,7 +37,7 @@ const skillsList = [
   "Digital Signal Processing",
   "SystemVerilog",
   "MATLAB",
-  "Graphic design",
+  "FPGA's",
 ];
 
 /**
@@ -50,7 +50,7 @@ const detailOrQuote =
 
 const quickLinks = [
   {
-    title: "My Academic Curriculum Vitae",
+    title: "Academic Curriculum Vitae",
     description:
       "A detailed overview of my academic journey, including my education, research, and professional experiences.",
   },
@@ -61,7 +61,7 @@ const quickLinks = [
   },
   {
     title: "Download Resume",
-    description: "Download a copy of my Resume.",
+    description: "All my fun experiences are here in my Resume. Download a copy.",
   },
   {
     title: "My GitHub Repository",

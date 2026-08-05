@@ -37,7 +37,7 @@ const projectList = [
     title: "Xtractor: A smart fume extractor for soldering stations",
     description:
       "I led fellow interns in designing and creating a prototype for a smart fume extractor in trying to help solve the problem of our senior colleagues inhaling fumes while soldering at Innov8 Hub.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "https://drive.google.com/drive/folders/1OXGz1cgclfJpwSoMTVtLB4agxgSRz6a-?usp=sharing",
     image: extractorImage,
     imageAlt: "Prototype design and engineering setup",
   },
