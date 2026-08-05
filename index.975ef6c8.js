@@ -2503,10 +2503,10 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"6xITm":[function(require,module,exports) {
+},{}],"ShInH":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
-var HMR_HOST = "0.0.0.0";
+var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
@@ -27224,7 +27224,7 @@ const imageAltText = "purple and blue abstract background";
     "Digital Signal Processing",
     "SystemVerilog",
     "MATLAB",
-    "Graphic design", 
+    "FPGA's", 
 ];
 /**
  * Use this to give more information about what you are passionate about,
@@ -27233,7 +27233,7 @@ const imageAltText = "purple and blue abstract background";
  */ const detailOrQuote = "I am passionate about solving problems in new creative ways to drive innovation.";
 const quickLinks = [
     {
-        title: "My Academic Curriculum Vitae",
+        title: "Academic Curriculum Vitae",
         description: "A detailed overview of my academic journey, including my education, research, and professional experiences."
     },
     {
@@ -27242,7 +27242,7 @@ const quickLinks = [
     },
     {
         title: "Download Resume",
-        description: "Download a copy of my Resume."
+        description: "All my fun experiences are here in my Resume. Download a copy."
     },
     {
         title: "My GitHub Repository",
@@ -28921,7 +28921,7 @@ const heroImageAltText = "desktop with books and laptop";
     {
         title: "Xtractor: A smart fume extractor for soldering stations",
         description: "I led fellow interns in designing and creating a prototype for a smart fume extractor in trying to help solve the problem of our senior colleagues inhaling fumes while soldering at Innov8 Hub.",
-        url: "https://github.com/microsoft/web-dev-for-beginners",
+        url: "https://drive.google.com/drive/folders/1OXGz1cgclfJpwSoMTVtLB4agxgSRz6a-?usp=sharing",
         image: (0, _xtractorJpgDefault.default),
         imageAlt: "Prototype design and engineering setup"
     },
@@ -29285,6 +29285,6 @@ $RefreshReg$(_c, "Awards");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","6xITm","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
