@@ -28645,6 +28645,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  * user scrolls so that they can constantly reach any part of your page.
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
 const navigationLinks = [
     {
         href: "#home",
@@ -28668,77 +28669,91 @@ const navigationLinks = [
     }, 
 ];
 const Header = ()=>{
+    _s();
+    const [menuOpen, setMenuOpen] = (0, _react.useState)(false);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            if (window.innerWidth > 768) setMenuOpen(false);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>window.removeEventListener("resize", handleResize);
+    }, []);
     const handleSmoothScroll = (event, href)=>{
         event.preventDefault();
         const target = document.querySelector(href);
-        if (target) target.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+            setMenuOpen(false);
+        }
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            position: "fixed",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1.4rem",
-            background: "rgba(255,255,255,0.48)",
-            backdropFilter: "blur(8px)",
-            WebkitBackdropFilter: "blur(8px)",
-            borderBottom: "1px solid rgba(78, 86, 126, 0.12)",
-            padding: "0.8rem 1rem",
-            top: 0,
-            width: "100%",
-            zIndex: 10
-        },
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+        className: "site-header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    position: "absolute",
-                    left: "1.5rem",
-                    fontFamily: "'Brush Script MT', 'Segoe Script', 'Lucida Handwriting', cursive",
-                    fontSize: "1.2rem",
-                    fontWeight: 500,
-                    color: "#4e567e",
-                    letterSpacing: "0.03em",
-                    lineHeight: 1
-                },
+                className: "site-brand",
                 children: "Ebube Anene"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                type: "button",
+                className: "menu-toggle",
+                onClick: ()=>setMenuOpen((current)=>!current),
+                "aria-expanded": menuOpen,
+                "aria-label": "Toggle navigation",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "menu-icon"
+                }, void 0, false, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 45,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "1.4rem",
-                    marginLeft: "auto",
-                    marginRight: "auto"
-                },
-                children: navigationLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: link.href,
-                        onClick: (event)=>handleSmoothScroll(event, link.href),
-                        children: link.label
-                    }, link.label, false, {
-                        fileName: "src/Components/Header.jsx",
-                        lineNumber: 70,
-                        columnNumber: 11
-                    }, undefined))
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                className: `site-nav ${menuOpen ? "open" : ""}`,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: navigationLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: link.href,
+                                onClick: (event)=>handleSmoothScroll(event, link.href),
+                                children: link.label
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 59,
+                                columnNumber: 15
+                            }, undefined)
+                        }, link.label, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 58,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 60,
+                lineNumber: 55,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.jsx",
-        lineNumber: 28,
+        lineNumber: 42,
         columnNumber: 5
     }, undefined);
 };
+_s(Header, "YpXa3kgiBOFhFYWp8S78i7Nbdv8=");
 _c = Header;
 exports.default = Header;
 var _c;

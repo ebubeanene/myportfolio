@@ -13,6 +13,148 @@ html {
   scroll-padding-top: 6rem;
 }
 
+.site-header {
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: #ffffff7a;
+  border-bottom: 1px solid #4e567e1f;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  padding: .8rem 1rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.site-brand {
+  color: #4e567e;
+  letter-spacing: .03em;
+  font-family: Brush Script MT, Segoe Script, Lucida Handwriting, cursive;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+  position: absolute;
+  left: 1.5rem;
+}
+
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  color: #4e567e;
+  background: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  display: none;
+}
+
+.menu-toggle .menu-icon, .menu-toggle .menu-icon:before, .menu-toggle .menu-icon:after {
+  width: 22px;
+  height: 2px;
+  background: #4e567e;
+  transition: transform .2s, opacity .2s;
+  display: block;
+}
+
+.menu-toggle .menu-icon {
+  position: relative;
+}
+
+.menu-toggle .menu-icon:before, .menu-toggle .menu-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-toggle .menu-icon:before {
+  top: -7px;
+}
+
+.menu-toggle .menu-icon:after {
+  top: 7px;
+}
+
+.site-nav {
+  align-items: center;
+  gap: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.site-nav ul {
+  align-items: center;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.site-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #4e567e;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    transform-origin: top;
+    opacity: 0;
+    pointer-events: none;
+    background: #fffffff5;
+    border-bottom: 1px solid #4e567e1f;
+    transition: transform .2s, opacity .2s;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: scaleY(0);
+  }
+
+  .site-nav.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scaleY(1);
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: .75rem 1rem .95rem;
+  }
+
+  .site-nav li {
+    width: 100%;
+  }
+
+  .site-nav a {
+    width: 100%;
+    border-radius: .75rem;
+    padding: .85rem 0;
+    display: block;
+  }
+}
+
 section[id] {
   scroll-margin-top: 6rem;
 }
