@@ -174,6 +174,18 @@ section.min-height {
   min-height: 100vh;
 }
 
+section.min-height:after {
+  height: 20%;
+  content: "";
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(#0000, #ffffffe0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 section.padding {
   padding: 5rem 0;
 }
@@ -193,10 +205,11 @@ section img.background {
 .home-hero-content {
   text-align: center;
   width: min(90vw, 48rem);
+  z-index: 1;
   position: absolute;
-  top: 5rem;
+  top: 38%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .home-hero-name {
@@ -217,6 +230,13 @@ section img.background {
   padding-top: 1rem;
   font-size: clamp(1rem, 2vw, 1.65rem);
   font-weight: 500;
+}
+
+.home-scroll-indicator {
+  z-index: 1;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
 }
 
 h2 {
@@ -276,6 +296,7 @@ a:hover {
 }
 
 .container .box {
+  color: inherit;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -355,25 +376,30 @@ a:hover {
 
 .quick-links-wrapper {
   max-width: 1200px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   padding: 0 2rem;
+}
+
+.quick-links-section {
+  background: #fff;
+  padding: 2rem 0 2.5rem;
 }
 
 .quick-links-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin-top: 2rem;
   display: grid;
 }
 
 .quick-link-card {
   cursor: pointer;
-  min-height: 260px;
+  min-height: 150px;
   text-align: left;
   background: #ffffffeb;
   border: 1px solid #ccc;
   border-radius: 12px;
-  padding: 2rem 1.5rem;
+  padding: 1rem;
   transition: transform .18s, box-shadow .18s, border-color .18s;
 }
 
@@ -384,13 +410,13 @@ a:hover {
 }
 
 .quick-link-card h3 {
-  margin-bottom: 1rem;
-  font-size: 1.9rem;
+  margin-bottom: .5rem;
+  font-size: 1.15rem;
   line-height: 1.2;
 }
 
 .quick-link-card p {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .portfolio-image {
@@ -417,11 +443,13 @@ a:hover {
 }
 
 .award-card {
+  color: inherit;
   background: #fffffff2;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   transition: transform .18s, box-shadow .18s, border-color .18s;
+  display: block;
 }
 
 .award-card:hover {

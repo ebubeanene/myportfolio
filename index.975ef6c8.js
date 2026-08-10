@@ -27234,173 +27234,191 @@ const imageAltText = "purple and blue abstract background";
 const quickLinks = [
     {
         title: "Academic Curriculum Vitae",
-        description: "A detailed overview of my academic journey, including my education, research, and professional experiences."
+        description: "A detailed overview of my academic journey, including my education, research, and professional experiences.",
+        url: "https://github.com/ebubeanene"
     },
     {
         title: "Roles Academy Youtube Channel",
-        description: "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things."
+        description: "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things.",
+        url: "https://www.youtube.com/c/ChukwudiebubeAnene"
     },
     {
         title: "Download Resume",
-        description: "All my fun experiences are here in my Resume. Download a copy."
+        description: "All my fun experiences are here in my Resume. Download a copy.",
+        url: "https://github.com/ebubeanene"
     },
     {
         title: "My GitHub Repository",
-        description: "Contains various work I have done on Electronics and TinyML."
+        description: "Contains various work I have done on Electronics and TinyML.",
+        url: "https://github.com/ebubeanene"
     }, 
 ];
 const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "padding",
-        id: "about",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "background",
-                src: (0, _motionBackgroundJpgDefault.default),
-                alt: imageAltText
-            }, void 0, false, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 75,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "about-layout",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "padding",
+                id: "about",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "about-portrait",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "portrait-image",
-                            src: (0, _portraitJpgDefault.default),
-                            alt: "Portrait of Chukwudiebube Anene"
-                        }, void 0, false, {
-                            fileName: "src/Components/About.jsx",
-                            lineNumber: 79,
-                            columnNumber: 11
-                        }, undefined)
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "background",
+                        src: (0, _motionBackgroundJpgDefault.default),
+                        alt: imageAltText
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 78,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "about-card",
+                        className: "about-layout",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                className: "about-section-title",
-                                children: "About Myself"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "about-portrait",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "portrait-image",
+                                    src: (0, _portraitJpgDefault.default),
+                                    alt: "Portrait of Chukwudiebube Anene"
+                                }, void 0, false, {
+                                    fileName: "src/Components/About.jsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 87,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "large about-description",
-                                children: description
-                            }, void 0, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 88,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 89,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                className: "about-skills-list",
-                                children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: skill
-                                    }, skill, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "about-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "about-section-title",
+                                        children: "About Myself"
+                                    }, void 0, false, {
                                         fileName: "src/Components/About.jsx",
                                         lineNumber: 92,
-                                        columnNumber: 15
-                                    }, undefined))
-                            }, void 0, false, {
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "large about-description",
+                                        children: description
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 93,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 94,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "about-skills-list",
+                                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                children: skill
+                                            }, skill, false, {
+                                                fileName: "src/Components/About.jsx",
+                                                lineNumber: 97,
+                                                columnNumber: 17
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 95,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 100,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "about-quote",
+                                        children: detailOrQuote
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.jsx",
+                                        lineNumber: 101,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 90,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 95,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "about-quote",
-                                children: detailOrQuote
-                            }, void 0, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 96,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 86,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 77,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "quick-links-wrapper",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "quick-links-section",
                 id: "quick-links",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            textAlign: "center"
-                        },
-                        children: "Check these links out"
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 101,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "quick-links-grid",
-                        children: quickLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "quick-link-card",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        children: link.title
-                                    }, void 0, false, {
-                                        fileName: "src/Components/About.jsx",
-                                        lineNumber: 105,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: link.description
-                                    }, void 0, false, {
-                                        fileName: "src/Components/About.jsx",
-                                        lineNumber: 106,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, link.title, true, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 104,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 102,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "quick-links-wrapper",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            style: {
+                                textAlign: "center"
+                            },
+                            children: "Check these links out"
+                        }, void 0, false, {
+                            fileName: "src/Components/About.jsx",
+                            lineNumber: 108,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "quick-links-grid",
+                            children: quickLinks.map((link)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: "quick-link-card",
+                                    href: link.url,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: link.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.jsx",
+                                            lineNumber: 118,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: link.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.jsx",
+                                            lineNumber: 119,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, link.title, true, {
+                                    fileName: "src/Components/About.jsx",
+                                    lineNumber: 111,
+                                    columnNumber: 15
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/Components/About.jsx",
+                            lineNumber: 109,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 100,
+                lineNumber: 106,
                 columnNumber: 7
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "src/Components/About.jsx",
-        lineNumber: 74,
-        columnNumber: 5
-    }, undefined);
+    }, void 0, true);
 };
 _c = About;
 exports.default = About;
@@ -28664,6 +28682,10 @@ const navigationLinks = [
         label: "Portfolio"
     },
     {
+        href: "#awards",
+        label: "Awards & Certs"
+    },
+    {
         href: "#footer",
         label: "Contact"
     }, 
@@ -28680,14 +28702,14 @@ const Header = ()=>{
     }, []);
     const handleSmoothScroll = (event, href)=>{
         event.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-            setMenuOpen(false);
-        }
+        const target = document.getElementById(href.slice(1));
+        if (!target) return;
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+        window.history.pushState(null, "", href);
+        setMenuOpen(false);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
         className: "site-header",
@@ -28697,7 +28719,7 @@ const Header = ()=>{
                 children: "Ebube Anene"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 43,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28710,12 +28732,12 @@ const Header = ()=>{
                     className: "menu-icon"
                 }, void 0, false, {
                     fileName: "src/Components/Header.jsx",
-                    lineNumber: 52,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 45,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -28728,28 +28750,28 @@ const Header = ()=>{
                                 children: link.label
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 59,
+                                lineNumber: 63,
                                 columnNumber: 15
                             }, undefined)
                         }, link.label, false, {
                             fileName: "src/Components/Header.jsx",
-                            lineNumber: 58,
+                            lineNumber: 62,
                             columnNumber: 13
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/Components/Header.jsx",
-                    lineNumber: 56,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 55,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.jsx",
-        lineNumber: 42,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -28838,11 +28860,7 @@ const Home = ({ name , title  })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    position: "absolute",
-                    bottom: "3rem",
-                    left: "50%"
-                },
+                className: "home-scroll-indicator",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _downArrowSvgDefault.default),
                     style: {
@@ -28919,7 +28937,6 @@ var _portfolioHomepageJpg = require("../images/PortfolioHomepage.jpg");
 var _portfolioHomepageJpgDefault = parcelHelpers.interopDefault(_portfolioHomepageJpg);
 var _motionBackgroundJpg = require("../images/motion-background.jpg");
 var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
-const heroImageAltText = "desktop with books and laptop";
 /**
  * Project list
  *
@@ -28967,101 +28984,59 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 65,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    display: "flex",
-                    flexDirection: "row",
-                    paddingTop: "3rem"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            maxWidth: "40%",
-                            alignSelf: "center"
-                        },
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _coolTechPngDefault.default),
-                            style: {
-                                height: "90%",
-                                width: "100%",
-                                objectFit: "cover"
-                            },
-                            alt: heroImageAltText
-                        }, void 0, false, {
-                            fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container",
-                        children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "box",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: project.image,
-                                        alt: project.imageAlt,
-                                        className: "portfolio-image"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: project.url,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            style: {
-                                                flexBasis: "40px"
-                                            },
-                                            children: project.title
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 79,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 78,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "small",
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 81,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, project.title, true, {
+                className: "container",
+                children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "box",
+                        href: project.url,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: project.image,
+                                alt: project.imageAlt,
+                                className: "portfolio-image"
+                            }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 76,
+                                lineNumber: 72,
                                 columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    flexBasis: "40px"
+                                },
+                                children: project.title
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 73,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "small",
+                                children: project.description
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 74,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, project.title, true, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 74,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        lineNumber: 65,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 66,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 64,
+        lineNumber: 61,
         columnNumber: 5
     }, undefined);
 };
@@ -29098,13 +29073,15 @@ const awardsList = [
         title: "Outstanding Innovation Award",
         issuer: "Innov8 Hub",
         year: "2024",
-        description: "Recognized for creative problem-solving and engineering impact."
+        description: "Recognized for creative problem-solving and engineering impact.",
+        url: "https://example.com/outstanding-innovation-award"
     },
     {
         title: "Academic Excellence Recognition",
         issuer: "University / Institution",
         year: "2023",
-        description: "Acknowledged for strong academic performance and leadership."
+        description: "Acknowledged for strong academic performance and leadership.",
+        url: "https://example.com/academic-excellence-recognition"
     }, 
 ];
 const certificationList = [
@@ -29112,13 +29089,15 @@ const certificationList = [
         title: "Microsoft GitHub Copilot Fundamentals",
         issuer: "Microsoft",
         year: "2024",
-        description: "Built practical AI-assisted development workflows."
+        description: "Built practical AI-assisted development workflows.",
+        url: "https://example.com/github-copilot-fundamentals"
     },
     {
         title: "TinyML / Embedded Systems Course",
         issuer: "Course Provider",
         year: "2024",
-        description: "Completed a focused learning path on small-scale ML systems."
+        description: "Completed a focused learning path on small-scale ML systems.",
+        url: "https://example.com/tinyml-embedded-systems"
     }, 
 ];
 const Awards = ()=>{
@@ -29136,12 +29115,12 @@ const Awards = ()=>{
                     children: "Awards & Certifications"
                 }, void 0, false, {
                     fileName: "src/Components/Awards.jsx",
-                    lineNumber: 37,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Awards.jsx",
-                lineNumber: 36,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29157,11 +29136,14 @@ const Awards = ()=>{
                                 children: "Awards"
                             }, void 0, false, {
                                 fileName: "src/Components/Awards.jsx",
-                                lineNumber: 42,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined),
-                            awardsList.map((award)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            awardsList.map((award)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     className: "award-card",
+                                    href: award.url,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "award-meta",
@@ -29170,46 +29152,46 @@ const Awards = ()=>{
                                                     children: award.year
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Awards.jsx",
-                                                    lineNumber: 46,
+                                                    lineNumber: 56,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: award.issuer
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Awards.jsx",
-                                                    lineNumber: 47,
+                                                    lineNumber: 57,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 45,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                             children: award.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 49,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: award.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 50,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, award.title, true, {
                                     fileName: "src/Components/Awards.jsx",
-                                    lineNumber: 44,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Awards.jsx",
-                        lineNumber: 41,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29222,11 +29204,14 @@ const Awards = ()=>{
                                 children: "Certifications"
                             }, void 0, false, {
                                 fileName: "src/Components/Awards.jsx",
-                                lineNumber: 56,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, undefined),
-                            certificationList.map((certification)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            certificationList.map((certification)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     className: "award-card",
+                                    href: certification.url,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "award-meta",
@@ -29235,58 +29220,58 @@ const Awards = ()=>{
                                                     children: certification.year
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Awards.jsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 76,
                                                     columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: certification.issuer
                                                 }, void 0, false, {
                                                     fileName: "src/Components/Awards.jsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 77,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 59,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                                             children: certification.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 79,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: certification.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Awards.jsx",
-                                            lineNumber: 64,
+                                            lineNumber: 80,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, certification.title, true, {
                                     fileName: "src/Components/Awards.jsx",
-                                    lineNumber: 58,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Awards.jsx",
-                        lineNumber: 55,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Awards.jsx",
-                lineNumber: 40,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Awards.jsx",
-        lineNumber: 35,
+        lineNumber: 39,
         columnNumber: 5
     }, undefined);
 };
