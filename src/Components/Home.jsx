@@ -32,7 +32,7 @@ const Home = ({ name, title }) => {
         <h1 className="home-hero-name">{name}</h1>
         <h2 className="home-hero-title">{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+      <div className="home-scroll-indicator">
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
       </div>
     </section>

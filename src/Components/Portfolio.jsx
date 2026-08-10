@@ -10,13 +10,10 @@
 
 import React from "react";
 
-import heroImage from "../images/coolTech.png";
 import coolTechImage from "../images/coolTech.png";
 import extractorImage from "../images/Xtractor.jpg";
 import resumeImage from "../images/PortfolioHomepage.jpg";
 import githubImage from "../images/motion-background.jpg";
-
-const heroImageAltText = "desktop with books and laptop";
 
 /**
  * Project list
@@ -63,25 +60,20 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={heroImage}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={heroImageAltText}
-          />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <img src={project.image} alt={project.imageAlt} className="portfolio-image" />
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-            </div>
-          ))}
-        </div>
+      <div className="container">
+        {projectList.map((project) => (
+          <a
+            className="box"
+            href={project.url}
+            key={project.title}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={project.image} alt={project.imageAlt} className="portfolio-image" />
+            <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+            <p className="small">{project.description}</p>
+          </a>
+        ))}
       </div>
     </section>
   );

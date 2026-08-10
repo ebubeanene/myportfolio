@@ -53,62 +53,76 @@ const quickLinks = [
     title: "Academic Curriculum Vitae",
     description:
       "A detailed overview of my academic journey, including my education, research, and professional experiences.",
+    url: "https://github.com/ebubeanene",
   },
   {
     title: "Roles Academy Youtube Channel",
     description:
       "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things.",
+    url: "https://www.youtube.com/c/ChukwudiebubeAnene",
   },
   {
     title: "Download Resume",
     description: "All my fun experiences are here in my Resume. Download a copy.",
+    url: "https://github.com/ebubeanene",
   },
   {
     title: "My GitHub Repository",
     description: "Contains various work I have done on Electronics and TinyML.",
+    url: "https://github.com/ebubeanene",
   },
 ];
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+    <>
+      <section className="padding" id="about">
+        <img className="background" src={image} alt={imageAltText} />
 
-      <div className="about-layout">
-        <div className="about-portrait">
-          <img
-            className="portrait-image"
-            src={portraitImage}
-            alt="Portrait of Chukwudiebube Anene"
-          />
+        <div className="about-layout">
+          <div className="about-portrait">
+            <img
+              className="portrait-image"
+              src={portraitImage}
+              alt="Portrait of Chukwudiebube Anene"
+            />
+          </div>
+
+          <div className="about-card">
+            <h2 className="about-section-title">About Myself</h2>
+            <p className="large about-description">{description}</p>
+            <hr />
+            <ul className="about-skills-list">
+              {skillsList.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+            <hr />
+            <p className="about-quote">{detailOrQuote}</p>
+          </div>
         </div>
+      </section>
 
-        <div className="about-card">
-          <h2 className="about-section-title">About Myself</h2>
-          <p className="large about-description">{description}</p>
-          <hr />
-          <ul className="about-skills-list">
-            {skillsList.map((skill) => (
-              <li key={skill}>{skill}</li>
+      <section className="quick-links-section" id="quick-links">
+        <div className="quick-links-wrapper">
+          <h2 style={{ textAlign: "center" }}>Check these links out</h2>
+          <div className="quick-links-grid">
+            {quickLinks.map((link) => (
+              <a
+                className="quick-link-card"
+                href={link.url}
+                key={link.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>{link.title}</h3>
+                <p>{link.description}</p>
+              </a>
             ))}
-          </ul>
-          <hr />
-          <p className="about-quote">{detailOrQuote}</p>
+          </div>
         </div>
-      </div>
-
-      <div className="quick-links-wrapper" id="quick-links">
-        <h2 style={{ textAlign: "center" }}>Check these links out</h2>
-        <div className="quick-links-grid">
-          {quickLinks.map((link) => (
-            <div className="quick-link-card" key={link.title}>
-              <h3>{link.title}</h3>
-              <p>{link.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

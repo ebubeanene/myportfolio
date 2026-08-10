@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Educator JS Codespaces Template",
   "source": "src/index.html",
-  "homepage": "http://ebubeanene.github.io/portfolio",
+  "homepage": ".",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
