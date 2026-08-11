@@ -7,7 +7,7 @@
  *
  * If a social value has an empty string it will not be displayed.
  */
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
@@ -27,6 +27,23 @@ import youTubeIcon from "../images/socials/youtube.svg";
  */
 
 const Footer = (props) => {
+  const footerRef = useRef(null);
+  const [isSpotlight, setIsSpotlight] = useState(false);
+
+  useEffect(() => {
+    const footer = footerRef.current;
+    if (!footer) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => setIsSpotlight(entry.isIntersecting), {
+      threshold: 0.45,
+    });
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
+
   const {
     devDotTo,
     email,
@@ -45,6 +62,8 @@ const Footer = (props) => {
   return (
     <div
       id="footer"
+      ref={footerRef}
+      className={`contact-footer${isSpotlight ? " contact-footer--spotlight" : ""}`}
       style={{
         display: "flex",
         flexDirection: "column",
