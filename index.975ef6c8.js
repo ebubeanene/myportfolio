@@ -27235,7 +27235,7 @@ const quickLinks = [
     {
         title: "Academic Curriculum Vitae",
         description: "A detailed overview of my academic journey, including my education, research, and professional experiences.",
-        url: "https://github.com/ebubeanene"
+        url: "https://drive.google.com/file/d/1Y-fY7Kjyvj3xd3260cW-VQVfvIrPNcWl/view?usp=sharing"
     },
     {
         title: "Roles Academy Youtube Channel",
