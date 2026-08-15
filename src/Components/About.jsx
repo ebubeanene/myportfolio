@@ -64,7 +64,7 @@ const quickLinks = [
   {
     title: "Download Resume",
     description: "All my fun experiences are here in my Resume. Download a copy.",
-    url: "https://github.com/ebubeanene",
+    url: "https://drive.google.com/file/d/1cAnEkKQfL67UQJc3z41Zp548kRa2SROt/view?usp=sharing",
   },
   {
     title: "My GitHub Repository",

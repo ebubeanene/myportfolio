@@ -10,7 +10,7 @@ const navigationLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#quick-links", label: "Quick Links" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#portfolio", label: "Select Projects" },
   { href: "#awards", label: "Awards & Certs" },
   { href: "#footer", label: "Contact" },
 ];

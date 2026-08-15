@@ -38,28 +38,12 @@ const projectList = [
     image: extractorImage,
     imageAlt: "Prototype design and engineering setup",
   },
-  {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-    image: resumeImage,
-    imageAlt: "Portfolio website homepage preview",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-    image: githubImage,
-    imageAlt: "Abstract motion graphics representing coding and collaboration",
-  },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ textAlign: "center" }}>Select Projects</h2>
       <div className="container">
         {projectList.map((project) => (
           <a
