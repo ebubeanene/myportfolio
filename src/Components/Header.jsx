@@ -37,7 +37,11 @@ const Header = () => {
       return;
     }
 
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    const header = document.querySelector(".site-header");
+    const headerOffset = header ? header.offsetHeight : 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerOffset - 12;
+
+    window.scrollTo({ top, behavior: "smooth" });
     window.history.pushState(null, "", href);
     setMenuOpen(false);
   };
